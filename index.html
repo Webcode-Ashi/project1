@@ -664,38 +664,75 @@
               <div class="w-[70%] flex h-125 bg-white rounded-xl shadow-lg shadow-[0_25px_35px_-10px_rgba(0,0,0,0.25) z-49">
                 <div class="w-2/3 h-full  px-10 py-10">
                   <form action="">
-                    <h2 class="text-2xl font-semibold text-gray-700">Get In touch</h2>
-                    <p class="text-sm text-gray-400 font-semibold">Drop me a message and I’ll get back to you</p>
-                    <br>
-                    <label for="name" class="pt-10 text-sm font-semibold text-gray-700 ">First Name</label>
-                    <label for="name" class="pt-10 ml-38 font-semibold text-gray-700 pl-35 text-sm">Last Name</label>
-                    <br>
-                    <input type="text" class="border-b-1 border-gray-300 pb-3 text-sm font-semibold text-gray-700" placeholder="Enter First Name Here...">
-                    <input type="text" class="mt-2 ml-47 border-b-1 border-gray-300 pb-3 text-sm font-semibold text-gray-700" placeholder="Enter Last Name Here...">
-                    <br>
-                    <br>
-                    <label for="name" class="text-sm font-semibold text-gray-700">Your Email</label>
-                    <label for="name" class=" ml-35 pl-38 text-sm font-semibold text-gray-700">Your Subject</label>
-                    <br>
-                    <input type="text" class="border-b-1 border-gray-300 pb-3 text-sm font-semibold text-gray-700" placeholder="Enter Email Here...">
-                    <input type="text" class="mt-2 ml-47 border-b-1 border-gray-300 pb-3 text-sm font-semibold text-gray-700" placeholder="Enter Subject Here...">
-                    <br>
-                    <br>
-                   <label for="name" class="text-sm font-semibold text-gray-700">Your Subject</label>
-                   <br>
-                    <input type="text" class=" border-b-1 border-gray-300 py-3 pb-5 text-sm font-semibold text-gray-700" placeholder="Enter Subject Here...">
-                    <br>
-                    <div class="flex items-center justify-between">
-                    <button class=" mt-8 rounded-full bg-yellow-500 mt-2 shadow-[0_0_40px_rgba(234,179,8,0.6)] px-14  py-3 text-white text-xl  font-semibold">Submit</button>
+                    <h2 class="text-3xl font-bold text-gray-700 mb-2">Get In Touch</h2>
+                    <p class="text-gray-400 mb-6">Drop me a message and I’ll get back to you</p>
+                    <div class="grid md:grid-cols-2 gap-10">
+
                     <div>
-                      <div class="flex items-center justify-center gap-3 mt-10">
-                        <h3 class="text-lg font-semibold text-gray-700">Follow Me -</h3>
-                        <div class="w-11 h-11 rounded-full bg-pink-100 flex justify-center items-center text-pink-600"><i class="fa-brands fa-dribbble text-lg"></i></div>
-                        <div class="w-11 h-11 rounded-full bg-blue-100 flex justify-center items-center text-[#2C9C92]"><i class="fa-brands fa-facebook-f text-lg"></i></div>
-                        <div class="w-11 h-11 rounded-full bg-green-100 flex justify-center items-center text-black"><i class="fa-brands fa-x-twitter text-lg"></i></div>
-                        <div class="w-11 h-11 rounded-full bg-purple-100 flex justify-center items-center text-blue-600"><i class="fa-brands fa-linkedin-in text-lg"></i></div>
-                      </div>
+                    <label class="text-sm font-semibold text-gray-600">First Name</label>
+                    <input type="text" placeholder="Enter First Name Here...."
+                    class="w-full border-b-2 border-gray-200 pb-1 outline-none
+                    focus:border-yellow-400 transition duration-300">
                     </div>
+
+                    <div>
+                    <label class="text-sm font-semibold text-gray-600">Last Name</label>
+                    <input type="text" placeholder="Enter Last Name Here...."
+                    class="w-full border-b-2 border-gray-200 pb-1 outline-none
+                    focus:border-yellow-400 transition duration-300">
+                    </div>
+
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-10 mt-8">
+
+                    <div>
+                    <label class="text-sm font-semibold text-gray-600">Email Address</label>
+                    <input type="email" placeholder="Enter Email Here...."
+                    class="w-full border-b-2 border-gray-200 pb-1 outline-none
+                    focus:border-yellow-400 transition duration-300">
+                    </div>
+                    
+                    <div>
+                    <label class="text-sm font-semibold text-gray-600">Subject</label>
+                    <input type="text" placeholder="Enter Subject Here...."
+                    class="w-full border-b-2 border-gray-200  pb-1 outline-none
+                    focus:border-yellow-400 transition duration-300">
+                    </div>
+                    
+                    </div>
+                    <div class="mt-8">
+                    <label class="text-sm font-semibold text-gray-600">Message</label>
+                    <textarea placeholder="Enter Subject Here..."
+                    class="w-full border-b-2 border-gray-200  outline-none resize-none
+                    focus:border-yellow-400 transition duration-300"></textarea>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center justify-between mt-10 gap-6">
+                    
+                    <button class="rounded-full bg-yellow-400 shadow-[0_0_40px_rgba(234,179,8,0.6)]
+                    px-14 py-3 text-white text-lg font-semibold hover:scale-105 transition">
+                    Submit Message
+                    </button>
+
+                    <div class="flex items-center gap-4">
+                    <span class="text-gray-600 font-semibold">Follow Me</span>
+
+                    <div class="w-11 h-11 rounded-full bg-pink-100 flex justify-center items-center text-pink-600 hover:scale-110 transition">
+                    <i class="fa-brands fa-dribbble"></i>
+                    </div>
+                    
+                    <div class="w-11 h-11 rounded-full bg-blue-100 flex justify-center items-center text-blue-600 hover:scale-110 transition">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="w-11 h-11 rounded-full bg-gray-200 flex justify-center items-center text-black hover:scale-110 transition">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+
+                    <div class="w-11 h-11 rounded-full bg-purple-100 flex justify-center items-center text-purple-600 hover:scale-110 transition">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    
+                    </div>
+
                     </div>
                   </form>
                 </div>
